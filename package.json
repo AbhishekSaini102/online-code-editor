@@ -1,0 +1,29 @@
+{
+  "name": "redblack",
+  "version": "1.0.0",
+  "description": "Coding blog Application",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run start --prefix server",
+    "client": "npm start --prefix client",
+    "install": "npm run install:server && npm run install:client",
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "build": "npm run build:client",
+    "build:client": "npm run build --prefix client",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "npm test --prefix server",
+    "test:client": "npm test --prefix client"
+  },
+  "keywords": [
+    "Blog",
+    "Codding",
+    "programming",
+    "OnlineCodeEditor",
+    "Language"
+  ],
+  "author": "Abhishek Kumar Saini",
+  "license": "ISC"
+}
